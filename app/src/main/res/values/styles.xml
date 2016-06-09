@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <!-- using min_adapter_stack = 0 so "aboutToEmpty" event is fired when stack
+         actually is empty -->
+        <item name="min_adapter_stack">0</item>
+        <item name="max_visible">4</item>
+    </style>
+
+</resources>
