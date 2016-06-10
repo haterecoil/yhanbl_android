@@ -9,11 +9,11 @@ import yhanbl.yhanbl.model.Message;
 /**
  * Created by mrgn on 09/06/2016.
  */
-public class NewsfeedItemHolder {
+public class NewsfeedMessageHolder {
 
     private final TextView helloText;
 
-    public NewsfeedItemHolder(View flingContainer) {
+    public NewsfeedMessageHolder(View flingContainer) {
         helloText = (TextView) flingContainer.findViewById(R.id.helloText);
     }
 

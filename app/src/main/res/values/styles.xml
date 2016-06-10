@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="SwipeFling">
+    <style name="NewsfeedFling">
         <item name="rotation_degrees">15</item>
         <!-- using min_adapter_stack = 0 so "aboutToEmpty" event is fired when stack
          actually is empty -->

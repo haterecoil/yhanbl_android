@@ -7,6 +7,7 @@ import android.database.DataSetObserver;
 import android.graphics.PointF;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Adapter;
@@ -85,8 +86,10 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
     @Override
     public void requestLayout() {
         if (!mInLayout) {
+            Log.d("SFAV", "FALSE mInLayout");
             super.requestLayout();
         }
+        Log.d("SFAV", "TRUE mInLayout");
     }
 
     @Override
@@ -128,6 +131,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
 
 
     private void layoutChildren(int startingIndex, int adapterCount){
+        Log.d("SFAV", "Layout children");
         while (startingIndex < Math.min(adapterCount, MAX_VISIBLE) ) {
             View newUnderChild = mAdapter.getView(startingIndex, null, this);
             if (newUnderChild.getVisibility() != GONE) {
@@ -136,6 +140,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
             }
             startingIndex++;
         }
+        Log.d("SFAV", String.format("Layout children LOIS %1$d", LAST_OBJECT_IN_STACK));
     }
 
 
@@ -286,6 +291,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
         if (mAdapter != null  && mDataSetObserver == null) {
             mDataSetObserver = new AdapterDataSetObserver();
             mAdapter.registerDataSetObserver(mDataSetObserver);
+            Log.d("SFAV", "registered adapter");
         }
     }
 
@@ -309,6 +315,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
     private class AdapterDataSetObserver extends DataSetObserver {
         @Override
         public void onChanged() {
+            Log.d("SFAV", "AdapterDataSetObserver changed");
             requestLayout();
         }
 

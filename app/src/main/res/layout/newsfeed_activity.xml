@@ -14,13 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <yhanbl.yhanbl.swipecards.SwipeFlingAdapterView
-            android:id="@+id/frame"
+        <yhanbl.yhanbl.adapter.NewsfeedFlingAdapterView
+            android:id="@+id/newsfeed_fling_frame"
             android:background="#ffeee9e2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:rotation_degrees="15.5"
-            style="@style/SwipeFling"
+            style="@style/NewsfeedFling"
             tools:context=".NewsfeedActivity" />
 
         <include layout="@layout/newsfeed_buttons" />
