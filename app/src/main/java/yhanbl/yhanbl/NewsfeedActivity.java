@@ -69,7 +69,7 @@ public class NewsfeedActivity extends AppCompatActivity {
         findViewById(R.id.newsfeed_button_cancel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                newsfeedAdapter.cancelLastChoice();
+                flingContainer.getTopCardListener().cancel();
             }
         });
 
@@ -122,6 +122,13 @@ public class NewsfeedActivity extends AppCompatActivity {
 
             @Override
             public void onScroll(float scrollProgressPercent) {
+            }
+
+            @Override
+            public void onCancel() {
+                newsfeedAdapter.cancelLastChoice();
+                flingContainer.removeAllViewsInLayout();
+                newsfeedAdapter.notifyDataSetChanged();
             }
         };
     }

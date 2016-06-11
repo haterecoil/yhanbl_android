@@ -4,6 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import yhanbl.yhanbl.model.Message;
 import yhanbl.yhanbl.swipecards.SwipeFlingAdapterView;
 
 /**

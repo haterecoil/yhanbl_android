@@ -282,6 +282,13 @@ public class FlingCardListener implements View.OnTouchListener {
             onSelected(false, objectY, 200);
     }
 
+    /**
+     * Cancels the last card
+     */
+    public void cancel() {
+        mFlingListener.onCancel();
+    }
+
 
     private float getExitPoint(int exitXPoint) {
         float[] x = new float[2];
@@ -308,6 +315,8 @@ public class FlingCardListener implements View.OnTouchListener {
         }
         return rotation;
     }
+
+
 
 
     /**
@@ -343,6 +352,8 @@ public class FlingCardListener implements View.OnTouchListener {
         void onClick(Object dataObject);
 
         void onScroll(float scrollProgressPercent);
+
+        void onCancel();
     }
 
 }

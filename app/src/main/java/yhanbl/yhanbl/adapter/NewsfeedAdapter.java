@@ -103,8 +103,11 @@ public class NewsfeedAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+// here was the cancel
+
     /**
      * cancelLastChoice
+     * removes last messageArchive and inserts it in messages
      */
     public void cancelLastChoice() {
         Log.d("LISTEN TO ME", "just cancel !");
@@ -124,9 +127,9 @@ public class NewsfeedAdapter extends BaseAdapter {
         Message message = messagesArchive.remove(messagesArchive.size() - 1).getMessage();
         Log.d("CANCEL", String.format("Just picked %s", message.getExcerpt()));
         this.messages.add(0, message);
-        List<Message> messagesCopy = new ArrayList<Message>(this.messages);
+//        List<Message> messagesCopy = new ArrayList<Message>(this.messages);
 //        notifyDataSetChanged();
-        this.refreshWithMessages(messagesCopy);
+//        this.refreshWithMessages(messagesCopy);
         // remove last NewsfeedMessageArchive from messageArchive
         // set it as first elem in messages
         // trigger the right animation
