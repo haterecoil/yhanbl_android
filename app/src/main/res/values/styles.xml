@@ -8,12 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ButtonPrimary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_primary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+
     <style name="NewsfeedFling">
         <item name="rotation_degrees">15</item>
         <!-- using min_adapter_stack = 0 so "aboutToEmpty" event is fired when stack
          actually is empty -->
         <item name="min_adapter_stack">0</item>
         <item name="max_visible">4</item>
+    </style>
+
+    <style name="TextViewLink"
+        parent="android:Widget.DeviceDefault.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
     </style>
 
 </resources>
