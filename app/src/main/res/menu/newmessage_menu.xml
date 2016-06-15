@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:title="edit"
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_create_white_48dp"
+        app:showAsAction="always"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:title="take photo"
+        android:id="@+id/action_photograph"
+        android:icon="@drawable/ic_add_a_photo_white_48dp"
+        app:showAsAction="always"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:title="select in gallery"
+        android:id="@+id/action_gallery"
+        android:icon="@drawable/ic_camera_roll_white_48dp"
+        app:showAsAction="always"/>
+</menu>

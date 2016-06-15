@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
@@ -76,6 +78,7 @@ public class NewsfeedAdapter extends BaseAdapter {
         NewsfeedMessageHolder newsfeedMessageHolder = (NewsfeedMessageHolder) viewFromCache.getTag();
         //update holder with the message
         Log.d("NewsfeedAd.getView", String.format("Refreshing with message %s", message.getExcerpt()));
+        Log.d("NewsfeedAd.getView", String.format("Refreshing with picture %s", message.getPictureUrl()));
         newsfeedMessageHolder.refreshWithMessage(message);
 
         return viewFromCache;

@@ -1,17 +1,25 @@
 package yhanbl.yhanbl.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import android.app.Service;
+import android.util.Log;
+
+import com.google.gson.annotations.SerializedName;
+
+import yhanbl.yhanbl.network.ServiceGenerator;
 
 /**
  * Created by mrgn on 09/06/2016.
  */
 public class Message {
-    private String text;
-    private String imagePath;
 
-    public Message(String imagePath, String text) {
-        this.imagePath = imagePath;
+    @SerializedName("text")
+    private String text;
+
+    @SerializedName("picture")
+    private String messagePicture;
+
+    public Message(String messagePicture, String text) {
+        this.messagePicture = ServiceGenerator.API_BASE_URL + messagePicture;
         this.text = text;
     }
 
@@ -19,8 +27,12 @@ public class Message {
         return text;
     }
 
-    public String getImagePath() {
-        return imagePath;
+    public void setMessagePicture(String messagePicture) {
+        this.messagePicture = messagePicture;
+    }
+
+    public String getPictureUrl() {
+        return "http://vps254447.ovh.net" + messagePicture;
     }
 
     public String getExcerpt() {

@@ -2,18 +2,37 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
-    android:layout_width="250dp"
-    android:layout_height="170dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    android:elevation="100dp"
+    android:nestedScrollingEnabled="false">
 
-    <TextView
-        android:id="@+id/helloText"
-        android:textSize="40sp"
-        android:textColor="@android:color/white"
-        android:background="#E339"
+    <yhanbl.yhanbl.view.SquareImageView
+        android:id="@+id/newsfeed_message_image"
         android:gravity="center"
         tools:text="@string/app_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#a64747"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/newsfeed_message_text"
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/colorTextPrimary"
+        android:background="#FFFFFF"
+        android:gravity="start"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="1"
+        android:textIsSelectable="true"
+        android:textAlignment="textStart" />
 
     <View
         android:id="@+id/item_swipe_left_indicator"
@@ -31,5 +50,4 @@
         android:layout_margin="10dp"
         android:layout_gravity="right"
         android:background="#5AF" />
-
 </FrameLayout>

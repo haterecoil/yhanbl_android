@@ -1,32 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="yhanbl.yhanbl.NewsfeedActivity">
+    android:orientation="vertical">
 
-    <FrameLayout
+    <include android:id="@+id/newsfeed_toolbar" layout="@layout/custom_toolbar" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="yhanbl.yhanbl.NewsfeedActivity"
+        android:padding="0dp">
 
-        <yhanbl.yhanbl.adapter.NewsfeedFlingAdapterView
-            android:id="@+id/newsfeed_fling_frame"
-            android:background="#ffeee9e2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:rotation_degrees="15.5"
-            style="@style/NewsfeedFling"
-            tools:context=".NewsfeedActivity" />
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/newsfeed_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
 
-        <include layout="@layout/newsfeed_buttons" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    </FrameLayout>
+            <include layout="@layout/newsfeed_buttons" />
 
-</RelativeLayout>
+            <yhanbl.yhanbl.adapter.NewsfeedFlingAdapterView
+                android:id="@+id/newsfeed_fling_frame"
+                android:background="#ffeee9e2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rotation_degrees="15.5"
+                style="@style/NewsfeedFling"
+                tools:context=".NewsfeedActivity"
+                android:layout_marginBottom="120dp" />
 
+        </FrameLayout>
+
+    </RelativeLayout>
+</LinearLayout>
 

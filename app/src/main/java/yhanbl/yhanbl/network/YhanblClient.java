@@ -35,7 +35,11 @@ public interface YhanblClient {
 
     // Get all messages for given user
     @GET("/messages")
-    Call<List<Message>> getUserMessages(@Header("Authorization")String authorizationToken);
+    Call<List<Message>> getAllMessages();
+
+    // Get new messages
+    @GET("/messages/new")
+    Call<List<Message>> getNewMessages();
 
     // Get one message detail
     @GET("messages/{id}")

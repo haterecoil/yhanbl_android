@@ -1,11 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="SwipeFlingStyle">@style/NewsfeedFling</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <item name="colorControlNormal">@color/colorTextLight</item>
+
+    </style>
+
+    <style name="SwipeFling">
+
     </style>
 
     <style name="ButtonPrimary">
@@ -13,7 +22,6 @@
         <item name="android:layout_height">@dimen/button_primary</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorTextLight</item>
-        <item name="android:elevation">10dp</item>
     </style>
 
     <style name="NewsfeedFling">
@@ -29,6 +37,20 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorTextLight</item>
+    </style>
+
+    <style name="ToolbarThemeTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorPrimary">@color/colorTextLight</item>
+    </style>
+
+    <style name="NewmessageTheme" parent="@style/AppTheme">
+        <!--<item name="navigationIcon">@drawable/ic_clear_white_48dp</item>-->
     </style>
 
 </resources>
