@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/container_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:id="@+id/inbox_toolbar" layout="@layout/custom_toolbar" />
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15pt"
+                android:layout_marginLeft="15pt"
+                android:layout_marginBottom="10pt"
+                android:scrollIndicators="none">
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="none">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15pt"
+                android:layout_marginLeft="15pt"
+                android:layout_marginBottom="10pt"
+                android:scrollIndicators="none">
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="none">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15pt"
+                android:layout_marginLeft="15pt"
+                android:layout_marginBottom="10pt"
+                android:scrollIndicators="none">
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="157.5pt"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="7pt"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:nestedScrollingEnabled="false"
+                    android:outlineProvider="bounds"
+                    android:layout_marginBottom="1pt">
+
+                    <ImageView
+                        android:src="@drawable/sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="95pt"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top|center_horizontal"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="Hello there !"
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"/>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.5pt"
+                        android:text="I was just thinking about how shitty my life is right now..."
+                        android:textColor="@color/material_grey_600"
+                        android:textSize="7pt"
+                        android:layout_marginTop="6pt"
+                        android:textIsSelectable="false" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="2pt"
+                        android:layout_marginTop="2pt">
+
+                        <ImageButton
+                            android:layout_width="16pt"
+                            android:layout_height="16pt"
+                            android:id="@+id/imageButton2"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_mail_outline_black_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

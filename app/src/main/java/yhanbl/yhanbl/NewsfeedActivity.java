@@ -95,6 +95,8 @@ public class NewsfeedActivity extends ActionBarActivity {
             startActivity(intent);
             return true;
         } else if ( id == R.id.action_inbox ) {
+            Intent intent = new Intent(getApplicationContext(), InboxActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
