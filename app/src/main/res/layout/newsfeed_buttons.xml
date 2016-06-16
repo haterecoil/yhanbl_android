@@ -5,12 +5,13 @@
     android:layout_gravity="center_horizontal|bottom"
     android:layout_marginBottom="20dp"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
 
     <ImageButton
         android:id="@+id/newsfeed_button_left"
         android:layout_margin="10dp"
-        android:src="@drawable/btn_skip"
+        android:src="@drawable/bad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent" />
@@ -18,9 +19,9 @@
     <ImageButton
         android:id="@+id/newsfeed_button_cancel"
         android:layout_margin="10dp"
-        android:src="@drawable/ic_undo_black_48dp"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:src="@drawable/revert"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:cropToPadding="true"
         android:layout_gravity="bottom"
         android:padding="0dp"
@@ -31,7 +32,7 @@
     <ImageButton
         android:id="@+id/newsfeed_button_right"
         android:layout_margin="10dp"
-        android:src="@drawable/btn_like"
+        android:src="@drawable/good"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent" />

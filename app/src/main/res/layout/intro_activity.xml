@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginRight="22pt"
+    android:layout_marginLeft="22pt">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/intro_title"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12pt"
+        android:textColor="#FF9266"
+        android:singleLine="false"
+        android:lineSpacingExtra="6pt"/>
+
+    <TextView
+        android:layout_marginTop="18pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/intro_desc"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_gravity="center_horizontal"
+        android:textSize="8.5pt"
+        android:lineSpacingExtra="3pt"/>
+
+    <Button
+        android:layout_marginTop="26pt"
+        android:id="@+id/intro_button"
+        style="@style/ButtonPrimary"
+        android:text="@string/intro_button"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="9pt"
+        android:onClick="myClickHandler" />
+</LinearLayout>

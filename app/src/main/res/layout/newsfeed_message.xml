@@ -16,10 +16,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#a64747"
+        android:background="#FFFFFF"
         android:layout_marginBottom="4dp"
         android:scaleType="centerCrop"
-        android:adjustViewBounds="true" />
+        android:adjustViewBounds="true"/>
 
     <TextView
         android:id="@+id/newsfeed_message_text"
@@ -33,6 +33,22 @@
         android:alpha="1"
         android:textIsSelectable="true"
         android:textAlignment="textStart" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/overlay_bad"
+        android:layout_height="fill_parent"
+        android:background="#EF8B8B"
+        android:alpha="0.7"
+        android:visibility="invisible"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/overlay_good"
+        android:layout_height="fill_parent"
+        android:background="#9CC871"
+        android:alpha="0.7"
+        android:visibility="invisible"></RelativeLayout>
 
     <View
         android:id="@+id/item_swipe_left_indicator"

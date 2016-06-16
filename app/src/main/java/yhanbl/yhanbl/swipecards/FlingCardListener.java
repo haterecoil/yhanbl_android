@@ -2,6 +2,7 @@ package yhanbl.yhanbl.swipecards;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.graphics.Color;
 import android.graphics.PointF;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -9,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
+import android.widget.RelativeLayout;
+
+import yhanbl.yhanbl.R;
 
 /**
  * Created by dionysis_lorentzos on 5/8/14
@@ -94,6 +98,7 @@ public class FlingCardListener implements View.OnTouchListener {
                     // Remember where we started
                     aDownTouchX = x;
                     aDownTouchY = y;
+                    /*view.findViewById(R.id.overlay_bad).setVisibility(View.VISIBLE);*/
                     //to prevent an initial jump of the magnifier, aposX and aPosY must
                     //have the values from the magnifier frame
                     if (aPosX == 0) {

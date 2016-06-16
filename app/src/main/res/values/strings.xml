@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Yhanbl</string>
 
+    <!-- Intro Strings-->
+    <string name="intro_title">YOU HAVE A NEW BEAUTIFUL LETTER</string>
+    <string name="intro_desc">Here is the service to receive, read and share some beautiful stories and letters with people around the world.</string>
+    <string name="intro_button">Let\'s start</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -13,8 +18,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="link_signup"><u>I want to sign up!</u></string>
+    <string name="link_signup"><u>Let me sign up!</u></string>
     <string name="link_sign_in"><u>I already have an account!</u></string>
-    <string name="link_forgot_password">I forgot my password </string>
-    <string name="action_signup_short">Sign up!</string>
+    <string name="link_forgot_password">I forgot my password...</string>
+    <string name="action_signup_short">Sign up</string>
 </resources>

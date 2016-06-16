@@ -10,4 +10,5 @@
     app:titleTextColor="@color/colorTextLight"
     app:subtitleTextColor="@color/colorTextSecondary"
     app:contentInsetEnd="0dp"
-    app:contentInsetStart="0dp" />
+    app:contentInsetStart="0dp">
+</android.support.v7.widget.Toolbar>
