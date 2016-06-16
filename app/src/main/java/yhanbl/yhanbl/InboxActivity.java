@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Created by Paul on 15/06/2016.
@@ -43,7 +42,7 @@ public class InboxActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_create) {
-            Intent intent = new Intent(getApplicationContext(), NewmessageActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MessageNewActivity.class);
             startActivity(intent);
             return true;
         } else if ( id == R.id.action_inbox ) {

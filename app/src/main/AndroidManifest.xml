@@ -21,11 +21,11 @@
         <activity
             android:name=".NewsfeedActivity"
             android:label="@string/app_name">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity
             android:name=".IntroActivity"
@@ -85,6 +85,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".MessageViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>
