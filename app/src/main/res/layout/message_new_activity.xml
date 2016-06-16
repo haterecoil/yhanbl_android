@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include android:id="@+id/message_new_toolbar" layout="@layout/custom_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/message_new_frame"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/message_new_toolbar"
+        android:layout_marginBottom="@dimen/button_primary"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false" />
+
+    <Button
+        android:id="@+id/message_new_send"
+        style="@style/ButtonPrimary"
+        android:text="@string/action_send"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
