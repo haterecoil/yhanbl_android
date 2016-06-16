@@ -39,10 +39,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/roses"
+                    <ImageView android:id="@+id/aad"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -94,10 +96,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/baby"
+                    <ImageView android:id="@+id/aaz"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -149,10 +153,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/banc"
+                    <ImageView android:id="@+id/aar"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -219,10 +225,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/friends"
+                    <ImageView android:id="@+id/aay"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -290,10 +298,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/hipster"
+                    <ImageView android:id="@+id/aaa"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -345,10 +355,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/landscape"
+                    <ImageView android:id="@+id/aab"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -400,10 +412,12 @@
                     android:focusable="false"
                     android:nestedScrollingEnabled="false"
                     android:outlineProvider="bounds"
-                    android:layout_marginBottom="1pt">
+                    android:layout_marginBottom="1pt"
+                    android:onClick="readMe">
 
-                    <ImageView
-                        android:src="@drawable/pic"
+                    <ImageView android:id="@+id/aac"
+                        android:tag="sample"
+                        android:src="@drawable/sample"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"

@@ -5,11 +5,15 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * Created by Paul on 15/06/2016.
@@ -56,6 +60,25 @@ public class InboxActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void readMe(View v) {
+        Log.d("READ", "ME");
+        LinearLayout ll = (LinearLayout) v;
+        ImageView image = (ImageView) ll.getChildAt(0);
+        Log.d("READ IMG", String.format("%s", image.getDrawable()));
+        TextView title = (TextView) ll.getChildAt(1);
+        Log.d("READ TXT", String.format("%s", title.getText()));
+        TextView text = (TextView) ll.getChildAt(2);
+        Log.d("READ TXT", String.format("%s", text.getText()));
+
+        Intent intent = new Intent(getBaseContext(), MessageViewActivity.class);
+        intent.putExtra("image_tag", (String) image.getTag());
+        intent.putExtra("title", title.getText());
+        intent.putExtra("text", text.getText());
+        startActivity(intent);
+
+    }
+
 
     /*public void onReplyClick(View v) {
         Toast.makeText(this, "REPLY activated", Toast.LENGTH_SHORT).show();

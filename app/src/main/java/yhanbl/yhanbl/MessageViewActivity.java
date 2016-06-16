@@ -1,6 +1,8 @@
 package yhanbl.yhanbl;
 
 import android.app.FragmentManager;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NavUtils;
@@ -9,12 +11,18 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.app.Fragment;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 /**
  * Created by Paul on 16/06/2016.
@@ -25,6 +33,11 @@ public class MessageViewActivity extends AppCompatActivity implements FragmentMa
     private Menu mMenu;
 
         private Handler mHandler = new Handler();
+        private CardBackFragment cardBack;
+        private CardFrontFragment cardFront;
+        public String extraText;
+        public String extraTitle;
+        public String extraImage;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +47,16 @@ public class MessageViewActivity extends AppCompatActivity implements FragmentMa
             Toolbar myToolbar = (Toolbar) findViewById(R.id.message_new_toolbar);
             setSupportActionBar(myToolbar);
 
+
             ActionBar ab = getSupportActionBar();
             ab.setDisplayHomeAsUpEnabled(true);
+
+            extraTitle = getIntent().getStringExtra("title");
+            extraText = getIntent().getStringExtra("text");
+//            Integer image_id = getIntent().getIntExtra("image_id", 0);
+//            Log.d("HUM", String.format("%d", image_id));
+//            extraImage = (ImageView) findViewById(image_id);
+            extraImage = getIntent().getStringExtra("image_tag");
 
             if (savedInstanceState == null) {
                 // If there is no saved instance state, add a fragment representing the
@@ -139,7 +160,32 @@ public class MessageViewActivity extends AppCompatActivity implements FragmentMa
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            return inflater.inflate(R.layout.message_view_picture, container, false);
+            View myFrag = inflater.inflate(R.layout.message_view_picture, container, false);
+//            ImageView image = (ImageView) myFrag.findViewById(R.id.view_image);
+//            MessageViewActivity act = (MessageViewActivity) getActivity();
+//            Log.d("yolo", act.extraImage);
+//            int drawableId = -1;
+//            try {
+//                Class res = R.drawable.class;
+//                Field field = res.getField(act.extraImage);
+//                drawableId = field.getInt(null);
+//            }
+//            catch (Exception e) {
+//                Log.e("MyTag", "Failure to get drawable id.", e);
+//            }
+//            image.setImageResource(drawableId);
+            return myFrag;
+        }
+
+        public static int getResId(String resName, Class<?> c) {
+
+            try {
+                Field idField = c.getDeclaredField(resName);
+                return idField.getInt(idField);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return -1;
+            }
         }
     }
 
@@ -153,7 +199,15 @@ public class MessageViewActivity extends AppCompatActivity implements FragmentMa
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            return inflater.inflate(R.layout.message_view_text, container, false);
+            View myFrag = inflater.inflate(R.layout.message_view_text, container, false);
+            TextView title = (TextView) myFrag.findViewById(R.id.textView3);
+            TextView text = (TextView) myFrag.findViewById(R.id.textView4);
+            MessageViewActivity act = (MessageViewActivity) getActivity();
+            title.setText(act.extraTitle);
+            Log.d("HUM", act.extraTitle);
+            text.setText(act.extraText);
+            Log.d("HUM", act.extraText);
+            return myFrag;
         }
     }
 }
