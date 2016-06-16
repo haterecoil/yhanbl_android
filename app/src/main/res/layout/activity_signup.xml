@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,9 @@
     tools:context="yhanbl.yhanbl.SignupActivity"
     android:weightSum="1">
 
-    <include layout="@layout/custom_toolbar" />
+    <include android:id="@+id/signup_toolbar" layout="@layout/custom_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
 
     <!-- Login progress -->
     <ProgressBar

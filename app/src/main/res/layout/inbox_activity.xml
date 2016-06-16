@@ -42,7 +42,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/roses"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -97,7 +97,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/baby"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -152,7 +152,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/banc"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -222,7 +222,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/friends"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -293,7 +293,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/hipster"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -348,7 +348,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/landscape"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"
@@ -403,7 +403,7 @@
                     android:layout_marginBottom="1pt">
 
                     <ImageView
-                        android:src="@drawable/sample"
+                        android:src="@drawable/pic"
                         android:layout_width="match_parent"
                         android:layout_height="95pt"
                         android:background="@color/colorPrimary"

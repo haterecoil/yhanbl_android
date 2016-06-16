@@ -189,6 +189,8 @@ public class NewsfeedActivity extends ActionBarActivity {
             @Override
             public void onAdapterAboutToEmpty(int itemsInAdapter) {
                 Log.d("ACT Listener", "onAdapterAboutToEmpty");
+                Intent intent = new Intent(getApplicationContext(), InboxActivity.class);
+                startActivity(intent);
             }
 
             @Override

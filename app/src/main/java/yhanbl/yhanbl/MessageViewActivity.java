@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import android.app.Fragment;
@@ -32,6 +33,9 @@ public class MessageViewActivity extends AppCompatActivity implements FragmentMa
 
             Toolbar myToolbar = (Toolbar) findViewById(R.id.message_new_toolbar);
             setSupportActionBar(myToolbar);
+
+            ActionBar ab = getSupportActionBar();
+            ab.setDisplayHomeAsUpEnabled(true);
 
             if (savedInstanceState == null) {
                 // If there is no saved instance state, add a fragment representing the

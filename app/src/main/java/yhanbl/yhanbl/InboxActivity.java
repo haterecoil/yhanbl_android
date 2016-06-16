@@ -1,6 +1,7 @@
 package yhanbl.yhanbl;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -27,6 +28,9 @@ public class InboxActivity extends ActionBarActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.inbox_toolbar);
         setSupportActionBar(myToolbar);
+
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -56,4 +60,9 @@ public class InboxActivity extends ActionBarActivity {
     /*public void onReplyClick(View v) {
         Toast.makeText(this, "REPLY activated", Toast.LENGTH_SHORT).show();
     }*/
+
+    public void myClickSingleView(View target) {
+        Intent intent = new Intent(getApplicationContext(), MessageViewActivity.class);
+        startActivity(intent);
+    }
 }

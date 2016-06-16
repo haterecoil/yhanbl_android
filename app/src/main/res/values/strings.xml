@@ -23,7 +23,7 @@
     <string name="link_forgot_password">I forgot my password...</string>
     <string name="action_signup_short">Sign up</string>
     <string name="description_image_1">your postal card picture</string>
-    <string name="message_new_title_hint">Par quoi allez-vous commencer ?</string>
-    <string name="message_new_text_hint">Quelle est la dernière chose que vous avez fait pour la première fois ? \n Quel est votre endroit préféré ?</string>
-    <string name="action_send">Envoyer !</string>
+    <string name="message_new_title_hint">Got an idea ?</string>
+    <string name="message_new_text_hint">What\'s the latest thing you\'ve done for the first time in your life?</string>
+    <string name="action_send">Send!</string>
 </resources>

@@ -21,6 +21,9 @@
         <activity
             android:name=".NewsfeedActivity"
             android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.LoginActivity" />
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,11 +35,11 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
 
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
 
 
         </activity>
@@ -44,6 +47,9 @@
             android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.IntroActivity" />
 
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,12 +63,18 @@
             android:name=".MessageNewActivity"
             android:label="@string/app_name"
             android:theme="@style/NewmessageTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.InboxActivity" />
         </activity>
 
         <activity
             android:name=".SignupActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.IntroActivity" />
 
         </activity>
 
@@ -80,6 +92,9 @@
             android:name=".InboxActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.NewsfeedActivity" />
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -92,11 +107,14 @@
             android:name=".MessageViewActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
-            <intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yhanbl.yhanbl.InboxActivity" />
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
 
         </activity>
     </application>
