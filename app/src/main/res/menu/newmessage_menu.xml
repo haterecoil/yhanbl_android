@@ -5,20 +5,14 @@
     <item
         android:title="edit"
         android:id="@+id/action_edit"
-        android:icon="@drawable/crayon2"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_create_white_48dp"
+        app:showAsAction="always"
+        android:visible="false"/>
 
     <!-- Settings, should always be in the overflow -->
     <item
         android:title="take photo"
-        android:id="@+id/action_photograph"
+        android:id="@+id/action_addpicture"
         android:icon="@drawable/ic_add_a_photo_white_48dp"
-        app:showAsAction="always"/>
-
-    <!-- Settings, should always be in the overflow -->
-    <item
-        android:title="select in gallery"
-        android:id="@+id/action_gallery"
-        android:icon="@drawable/ic_camera_roll_white_48dp"
         app:showAsAction="always"/>
 </menu>

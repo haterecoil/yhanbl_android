@@ -3,17 +3,13 @@ package yhanbl.yhanbl;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,7 +25,6 @@ import yhanbl.yhanbl.adapter.NewsfeedAdapter;
 import yhanbl.yhanbl.adapter.NewsfeedFlingAdapterView;
 import yhanbl.yhanbl.model.AuthenticationTokenManager;
 import yhanbl.yhanbl.model.Message;
-import yhanbl.yhanbl.model.NewsfeedMessageArchive;
 import yhanbl.yhanbl.network.ServiceGenerator;
 import yhanbl.yhanbl.network.YhanblClient;
 
@@ -91,7 +86,7 @@ public class NewsfeedActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_create) {
-            Intent intent = new Intent(getApplicationContext(), NewmessageActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MessageNewActivity.class);
             startActivity(intent);
             return true;
         } else if ( id == R.id.action_inbox ) {
